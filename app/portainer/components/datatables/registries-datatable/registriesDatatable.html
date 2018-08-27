@@ -62,7 +62,7 @@
                   <i class="fa fa-users" aria-hidden="true"></i> Manage access
                 </a>
               </td>
-              <td>
+              <td ng-if="item.Version === 'registry/2.0'">
                 <a ui-sref="portainer.registries.registry.images({id: item.Id})">
                   <i class="fa fa-search" aria-hidden="true"></i> Browse
                 </a>
